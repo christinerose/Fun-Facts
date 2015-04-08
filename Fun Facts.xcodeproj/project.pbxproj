@@ -13,6 +13,8 @@
 		98D709931ACEE5EE00D76A48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98D709921ACEE5EE00D76A48 /* Images.xcassets */; };
 		98D709961ACEE5EE00D76A48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98D709941ACEE5EE00D76A48 /* LaunchScreen.xib */; };
 		98D709A21ACEE5EF00D76A48 /* Fun_FactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D709A11ACEE5EF00D76A48 /* Fun_FactsTests.swift */; };
+		98D709AC1ACF5B5500D76A48 /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D709AB1ACF5B5500D76A48 /* FactBook.swift */; };
+		98D709B01AD055EA00D76A48 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D709AF1AD055EA00D76A48 /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,9 @@
 		98D7099B1ACEE5EF00D76A48 /* Fun FactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun FactsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D709A01ACEE5EF00D76A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D709A11ACEE5EF00D76A48 /* Fun_FactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fun_FactsTests.swift; sourceTree = "<group>"; };
+		98D709AB1ACF5B5500D76A48 /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
+		98D709AD1AD0419700D76A48 /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Scratchpad.playground; path = Playgrounds/Scratchpad.playground; sourceTree = "<group>"; };
+		98D709AF1AD055EA00D76A48 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorWheel.swift; path = ../ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			children = (
 				98D709881ACEE5EE00D76A48 /* Fun Facts */,
 				98D7099E1ACEE5EF00D76A48 /* Fun FactsTests */,
+				98D709AE1AD0426600D76A48 /* Playgrounds */,
 				98D709871ACEE5EE00D76A48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				98D7098B1ACEE5EE00D76A48 /* AppDelegate.swift */,
+				98D709AF1AD055EA00D76A48 /* ColorWheel.swift */,
+				98D709AB1ACF5B5500D76A48 /* FactBook.swift */,
 				98D7098D1ACEE5EE00D76A48 /* ViewController.swift */,
 				98D7098F1ACEE5EE00D76A48 /* Main.storyboard */,
 				98D709921ACEE5EE00D76A48 /* Images.xcassets */,
@@ -110,6 +118,14 @@
 				98D709A01ACEE5EF00D76A48 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98D709AE1AD0426600D76A48 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				98D709AD1AD0419700D76A48 /* Scratchpad.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D709AC1ACF5B5500D76A48 /* FactBook.swift in Sources */,
 				98D7098E1ACEE5EE00D76A48 /* ViewController.swift in Sources */,
 				98D7098C1ACEE5EE00D76A48 /* AppDelegate.swift in Sources */,
+				98D709B01AD055EA00D76A48 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Fun Facts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Fun Facts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +425,7 @@
 				98D709A71ACEE5EF00D76A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98D709A81ACEE5EF00D76A48 /* Build configuration list for PBXNativeTarget "Fun FactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +434,7 @@
 				98D709AA1ACEE5EF00D76A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
